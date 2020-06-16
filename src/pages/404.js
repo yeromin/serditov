@@ -1,7 +1,7 @@
-import React from "react"
-import { Link as LinkGatsby } from "gatsby"
+import React from "react";
+import { Link as LinkGatsby } from "gatsby";
 import { Title, Link, Meta } from "react-head";
-import Layout from '../components/layout'
+import Layout from '../components/layout';
 
 
 const Seo = () => (

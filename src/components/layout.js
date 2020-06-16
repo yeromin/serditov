@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./header/header";
-import { myContext } from '../../provider';
+import { myContext } from './provider';
 
 const Layout = (props) => {
 

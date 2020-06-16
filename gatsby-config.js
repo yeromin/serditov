@@ -23,6 +23,7 @@ module.exports = {
         ],
         display: 'swap'
       }
-    }
+    },
+    `gatsby-plugin-netlify-cms`
   ],
 }
