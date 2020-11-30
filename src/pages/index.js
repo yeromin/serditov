@@ -1,10 +1,10 @@
 import React from "react";
 import { Title, Link, Meta } from "react-head";
-import Layout from '../components/layout'
+import Layout from "../components/layout";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import Images from '../../src/imageSorce';
+import Images from "../../src/imageSorce";
 
 const Seo = () => (
   <>
@@ -17,10 +17,10 @@ const Seo = () => (
 let sliderImages = Images.map((imageURL, i) => {
   return (
     <div key={i}>
-      <img src={imageURL} alt={''}/>
+      <img src={imageURL} alt={""} />
     </div>
-  )
-})
+  );
+});
 
 class SimpleSlider extends React.Component {
   render() {
@@ -31,23 +31,18 @@ class SimpleSlider extends React.Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       fade: true,
-    }
-    return (
-      <Slider {...settings}>
-        {sliderImages}
-      </Slider>
-    );
+    };
+    return <Slider {...settings}>{sliderImages}</Slider>;
   }
 }
 
- const Home = ({location}) => {
-  
+const Home = ({ location }) => {
   return (
-    <Layout location={location}> 
+    <Layout location={location}>
       <Seo />
       <SimpleSlider />
     </Layout>
   );
-}
+};
 
-export default Home
+export default Home;
