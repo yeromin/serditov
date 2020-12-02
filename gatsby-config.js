@@ -6,8 +6,14 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Serditov Architect test META",
+    description: "Some Serditov Architect test desc",
+  },
+
   plugins: [
     `gatsby-plugin-react-head`,
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -19,11 +25,17 @@ module.exports = {
           `Montserrat\:800`,
           `Questrial`,
           `Didact Gothic`,
-          `Poppins\:900,display=swap`
+          `Poppins\:900,display=swap`,
         ],
-        display: 'swap'
-      }
+        display: "swap",
+      },
     },
-    `gatsby-plugin-netlify-cms`
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
   ],
-}
+};
