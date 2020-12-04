@@ -4,9 +4,9 @@ html {
 }
 
 .thumbnails {
-position: fixed;
-left: 20%;
-top: 10px;
+  position: fixed;
+  left: 20%;
+  top: 10px;
 }
 
 .page-showcase .slick-dots {
@@ -17,13 +17,13 @@ top: 10px;
   flex-wrap: wrap;
   height: 100vh;
   top: -3000px;
-  transition: all .5s;
+  transition: all 0.5s;
   background: #000;
 }
 
 .thumbnails_opened.page-showcase .slick-dots {
   top: 50px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .page-showcase .slick-dots li {
@@ -53,7 +53,7 @@ top: 10px;
 }
 
 .page-main {
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
 }
 
@@ -67,4 +67,9 @@ top: 10px;
 
 .slick-list {
   height: 100vh;
+}
+
+.slick-slider {
+  min-height: 400px;
+  max-height: calc(100vh - 200px);
 }
