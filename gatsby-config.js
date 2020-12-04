@@ -14,6 +14,8 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-head`,
     `gatsby-plugin-netlify-cms`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
